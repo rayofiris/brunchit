@@ -1,8 +1,10 @@
 
 function startTimer() {
 
-let music = document.querySelector("audio");
-music.play();
+ let music = document.querySelector("audio");
+ setTimeout(() => {
+    music.play()
+  }, 3000);
 
 const timerMinutes = 10;
 
@@ -46,7 +48,7 @@ function updateCountdown(){
     x = setInterval(updateCountdown, 1000);
     updateCountdown();
    
-
+   
 
 }
 
